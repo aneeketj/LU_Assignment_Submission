@@ -14,11 +14,11 @@ int main(){
 
     if(a>b)
     {
-        cout<<endl<<"The largest number is:\t"<<a;
+        cout<<endl<<"The lowest number is:\t"<<b;
     }
     else
     {
-    cout<<endl<<"The largest number is:\t"<<b;
+        cout<<endl<<"The lowest number is:\t"<<a;
     }
 
     return 0;
