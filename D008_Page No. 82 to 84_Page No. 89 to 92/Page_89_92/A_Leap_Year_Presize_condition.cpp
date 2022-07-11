@@ -15,12 +15,14 @@
 using namespace std;
 
 int main(){
-    int yr, f, h, fh;
+    int yr;
 
     cout << endl << "Enter the year to check in YYYY format:\t";
     cin >> yr;
 
-    if (((yr%4 == 0) && (yr != 100)) || ((yr%4 == 0) && (yr%100 == 0) && (yr%400 == 0)))
+    cout << yr%4;
+
+    if ((yr%4 == 0  && yr%100 != 0) || yr%400 ==0 )
         cout << endl << "The entered year is a leap year";
     else
         cout << endl << "The entered year is NOT a leap year";
