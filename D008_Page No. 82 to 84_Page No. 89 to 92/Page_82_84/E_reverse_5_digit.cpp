@@ -37,6 +37,4 @@ int main(){
     cout << endl << "The original and reversed number are not equal";
 
     return 0;
-
-
 }
