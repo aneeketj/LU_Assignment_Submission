@@ -37,10 +37,10 @@ Write CPP programs for the following:
 
 
 (d) 	A certain grade of steel is graded according to the following
-	conditions:
-	(i) 	Hardness must be greater than 50
-	(ii) 	Carbon content must be less than 0.7
-	(iii) Tensile strength must be greater than 5600
+		conditions:
+			(i) 	Hardness must be greater than 50
+			(ii) 	Carbon content must be less than 0.7
+			(iii) 	Tensile strength must be greater than 5600
 	The grades are as follows:
 		Grade is 10 if all three conditions are met
 		Grade is 9 if conditions (i) and (ii) are met
