@@ -4,6 +4,7 @@
 
 #include <iostream> 
 using namespace std;
+#include <math.h>
 
 int main()
 {
@@ -18,16 +19,22 @@ int main()
     cout << endl << "Enter side C:\t";
     cin >> c; 
 
+    if (((sqrt((a*a) + (b*b))) == c) || ((sqrt((b*b) + (c*c))) == a) || ((sqrt((a*a) + (c*c))) == b) )
+        cout << endl << "It is a Right Angle Triangle and ";
+    else 
+        cout << endl << "it is Not a right angled Triangle but ";
+
+
     if (a==b && b==c)
     {
-        cout << endl << "The triangel is Equilateral";
+        cout << "The triangel is Equilateral";
     }
     else if (a==b || b==c || a==c)
     {
-        cout << endl << "The triangel is Isosceles";
+        cout << "The triangel is Isosceles";
     }
     else
     {
-        cout << endl << "The triangel is Scalene";
+        cout << "The triangel is Scalene";
     }
 }
