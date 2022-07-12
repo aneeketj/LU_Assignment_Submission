@@ -8,7 +8,6 @@ using namespace std;
 
 int main()
 {
-
     int a, b, c;
 
     cout << endl  << "Enter the first side of a triangle:\t";
@@ -62,4 +61,3 @@ int main()
     }
     return 0;
 }
-
