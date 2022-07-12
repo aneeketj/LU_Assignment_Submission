@@ -7,7 +7,7 @@
 using namespace std;
 
 int main(){
-    int ax, ay, bx, by, cx, cy;
+    float ax, ay, bx, by, cx, cy;
     float mba, mca;
 
     cout << endl << "Please Enter Point Ax coordinate xa:\t";
@@ -30,17 +30,23 @@ int main(){
     cout << endl << "coordingates of point B:\t (" << bx << ", " << by << ")";
     cout << endl << "coordingates of point C:\t (" << cx << ", " << cy << ")"; 
 
-    mba = (ax-bx)/(ay-by);
-    mca = (ax-cx)/(ay-cy);
+    mba = ((by - ay)/(bx - ax));
 
-    cout << endl << mba;
-    cout << endl << mca;
+    cout << endl << "Slope of line AB is : " << mba;
+
+    mca = ((cy - ay)/(cx - ax));
+
+    cout << endl << "Slope of line AC is : " << mca;
 
     if (mba == mca)
-        cout << endl << "The points FALL on same line";
-    else
-        cout << endl << "The points DO NO FALL on same line";
-    
+    {
+        cout << endl << "As slope is same  -- > Points lie on same Line";
+    }
+    else 
+    {
+        cout << endl << "As slope is not same  -- > Points DO NOT lie on same line";
+    }
+
     return 0;
 
 }
