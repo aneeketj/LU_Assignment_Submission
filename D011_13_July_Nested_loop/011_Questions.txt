@@ -1,0 +1,2 @@
+1.	WAP to check if the entered no is armstrong or not.
+2.  WAP to print perfect no from 1 to 100.
