@@ -12,4 +12,24 @@
 #include<iostream>
 #include<iomanip>
 using namespace std;
+int main()
+{
+    int i, j, num, temp=0;
+    cout << endl << "Enter number of iterations:\t";
+    cin >> num;
+    for (i=1; i<=num; i++)
+    {   
+        for (j=1; j<=num; j++)
+        {
+            cout << setw(4)<< j+temp;
+        }
+        temp = temp+num;
+        cout << endl;
+    }
+
+    cout << endl << "\t\t\tEND OF THE PROGRAM";
+
+    return 0;
+
+}
 
