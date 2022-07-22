@@ -1,1 +1,2 @@
-pascal piramid program, finding maximum and minimum in a 2d array.
+1.  pascal piramid program, 
+2.  finding maximum and minimum in a 2d array.
