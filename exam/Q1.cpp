@@ -14,9 +14,7 @@ int main()
     }
 
     for (i=4; i>=0; i--)
-    {
-        b[i] = a[i];
-    }
+        b[i] = a[4-i];
 
     for(i=0; i<5; i++)
     {
