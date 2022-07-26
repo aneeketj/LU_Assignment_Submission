@@ -1,4 +1,5 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main()
@@ -35,7 +36,7 @@ int main()
 
     for (i=0; i<5; i++)
     {
-        cout << endl << b[i];           
+        cout << setw(5) << b[i];           
     }
 
 }

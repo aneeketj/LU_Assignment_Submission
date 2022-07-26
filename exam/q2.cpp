@@ -28,6 +28,6 @@ int main()
         }
     }
 
-    cout << endl << "max=  " << max;
-    cout << endl << "min=  " << min;
+    cout << endl << "The maximum Number in given array is =  " << max;
+    cout << endl << "The minimum Numbe in given array is =  " << min;
 }

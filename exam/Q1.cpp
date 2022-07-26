@@ -1,4 +1,5 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main()
@@ -16,9 +17,11 @@ int main()
     for (i=4; i>=0; i--)
         b[i] = a[4-i];
 
+    cout << "The reversed array of a is b=\t" ;
+    
     for(i=0; i<5; i++)
     {
-        cout << endl << b[i];
+        cout << setw(4) << b[i];
     }
 
     return 0;
