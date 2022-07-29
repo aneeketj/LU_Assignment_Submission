@@ -3,8 +3,8 @@
 #include<iostream>
 using namespace std;
 
-int max(int max);
-int min(int min);
+int max(int);
+int min(int);
 
 int main()
 {
@@ -15,7 +15,10 @@ int main()
         cout << endl << "Enter element in array:\t";
         cin >> a[i];
     }
+
+ 
+
     
-    
+
     
 }
