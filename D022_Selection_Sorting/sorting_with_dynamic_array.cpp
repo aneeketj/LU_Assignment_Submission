@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int *p, n;
@@ -15,16 +16,17 @@ int main()
 
     for (i=0; i<n; i++)
     {
-        cout << endl << "Enter the element number" << i+1 << ":\t";
+        cout << endl << "Enter the element number " << i+1 << ":\t";
         cin >> p[i];
     }
 
     sel (p, n);
+    
     cout << endl << "after sorting";
 
     for (i=0; i<n; i++)
     {
-        cout << endl << p[i];
+        cout << setw(5) << p[i];
     }
     return 0;
 }
