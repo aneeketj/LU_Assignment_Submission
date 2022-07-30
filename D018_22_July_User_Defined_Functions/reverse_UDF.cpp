@@ -26,9 +26,7 @@ int reverse(int n)
     while(n>0)
     {
         rem=n%10;
-
         rnumber=(rnumber*10)+rem;
-
         n=n/10;
     }
 

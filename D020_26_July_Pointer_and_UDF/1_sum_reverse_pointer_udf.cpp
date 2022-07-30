@@ -8,15 +8,16 @@ int sum(int);
 
 int main()
 {
-    int num, add;
+    int num, add, reve;
     cout << endl << "Enter the Number:\t";
     cin >> num;
 
     add = sum(num);
 
-    // reve = reverse(num);
+    reve = reverse(num);
 
     cout << endl << "sum is \t" << add;
+    cout << endl << "reverse is \t" << reve;
 
     return 0;   
 }
@@ -42,4 +43,18 @@ int sum(int n)
     }
 
     return add;
+}
+
+
+int reverse(int n)
+{
+    int rem, rev=0;
+
+    while (n>0)
+    {
+        rem = n%10;
+        rev = rem + (rev*10);
+        n = n/10;
+    }
+    return rev;
 }
