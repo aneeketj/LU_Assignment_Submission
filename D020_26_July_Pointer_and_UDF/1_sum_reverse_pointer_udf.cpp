@@ -3,58 +3,37 @@
 #include<iostream>
 using namespace std;
 
-int reverse(int);
-int sum(int);
+void num (int, int*, int*);
 
 int main()
 {
-    int num, add, reve;
+    int n, rev, sum;
+
     cout << endl << "Enter the Number:\t";
-    cin >> num;
+    cin >> n;
 
-    add = sum(num);
+    num(n, &rev, &sum);
 
-    reve = reverse(num);
+    cout << endl << "Sum of digit for given number is\t" << sum;
+    cout << endl << "Reverse number for given number is\t" << rev;
 
-    cout << endl << "sum is \t" << add;
-    cout << endl << "reverse is \t" << reve;
-
-    return 0;   
+    return 0;
 }
 
-int sum(int n)
+void num (int n, int*r, int *s)
 {
-    int  add=0, i, digit=0, temp=n;
+    int rem;
+    *r = 0;
+    *s = 0;
 
-    while (temp > 0) 
-    {
-        digit++;
-        temp = temp/10;
-        // cout << endl << digit;
-    }
-
-    temp = n;
-
-    while (temp>0)
-    {
-        add = add + (temp%10);
-        temp = temp/10;
-        // cout << endl << add;
-    }
-
-    return add;
-}
-
-
-int reverse(int n)
-{
-    int rem, rev=0;
-
-    while (n>0)
+    while(n>0)
     {
         rem = n%10;
-        rev = rem + (rev*10);
+
+        *s+=rem;
+        *r=(*r*10)+rem;
+
         n = n/10;
     }
-    return rev;
+
 }
