@@ -5,8 +5,8 @@ int main()
 {
     int num ,prime=0;
 
-    cout<<"Enter the number\t:";
-    cin>>num;
+    cout << "Enter the number\t:";
+    cin >> num;
 
     check_prime(num, &prime);
 
@@ -23,11 +23,11 @@ int main()
 
 void check_prime(int n, int *prime)
 {
-    for(int i=2; i<=n/2; i++)
+    for(int i = 2; i <= n/2; i++)
     {
-        if(n%i==0)
+        if(n%i == 0)
         {
-            *prime=1;
+            *prime = 1;
             break;
         }
     }
