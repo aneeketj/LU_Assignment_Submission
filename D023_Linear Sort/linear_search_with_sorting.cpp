@@ -1,46 +1,46 @@
 #include<iostream>
 using namespace std;
-int linear(int [],int,int);
-void sel (int [], int s);
+int linear(int [], int, int);
+void sel(int [], int size);
 int *p;
 
 int main()
 {
-        int s, v, pos, i;
+        int size, find, pos, i;
 
         cout << endl<< "Enter length of array:\t";
-        cin >> s;
+        cin >> size;
 
-        p = new int [s];
+        p = new int [size];
 
-        for (i=0; i<s; i++)
+        for (i=0; i<size; i++)
         {
                 cout << endl << "Enter the element:\t";
                 cin >> p[i];
         }
 
         cout << endl << "Which element to find:\t";
-        cin >> v;
+        cin >> find;
 
-        sel (p, s);
-        pos= linear(p, s, v);
+        sel (p, size);
+        pos= linear(p, size, find);
 
         if (pos == 0)
-            cout <<endl << v << "The element is not present in array";
+            cout <<endl << find << "The element is not present in array";
         else
         {
-            cout << endl << v <<"The element is found at "<<pos<<"th position";
+            cout << endl << find <<"The element is found at "<< pos <<"th position";
         }
     return 0;
 
 }
-int linear (int a[], int s, int v)
+int linear (int a[], int size, int find)
 {
         int i,f=0;
 
-        for(i=0; i<s; i++)
+        for(i=0; i<size; i++)
         {
-            if(a[i] == v)
+            if(a[i] == find)
             {
                 f=1;
                 return(i+1);
@@ -50,13 +50,13 @@ int linear (int a[], int s, int v)
 }
 
 
-void sel (int [], int s)
+void sel (int [], int size)
 {
     int i, j, t;
 
-    for (i=0; i<s; i++)
+    for (i=0; i<size; i++)
     {
-        for (j=i+1; j < s; j++)
+        for (j=i+1; j < size; j++)
         {
             if (p[i]>p[j])
             {
