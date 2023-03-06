@@ -1,0 +1,42 @@
+Perform the following tasks:
+
+
+Q1.What does the primary analysis of several categorical
+
+features reveal?
+
+
+
+Q2. Perform the following Exploratory Data Analysis tasks:
+
+a. Missing Value Analysis
+
+b. Label Encoding wherever required
+
+c.   Selecting important features.
+
+d. Outlier Detection & Handling
+
+e. Standardize the data using the anyone of the scalers provided by sklearn. 
+
+ 
+
+Q3. Build the following Supervised Learning models:
+
+a. Logistic Regression
+
+b. Naïve Bayes
+
+c.  KNN
+
+d. SVM
+
+
+
+Q4. Tabulate the performance metrics of all the above models and tell which model performs better in predicting if the
+
+Passenger will survive or not.
+
+
+
+ Dataset link: https://drive.google.com/file/d/1mwLqWC9pLnJdwfPDvM8F_RsPcl_OwfcZ/view?usp=sharing
